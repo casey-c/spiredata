@@ -158,13 +158,16 @@ function ensureSetup(json) {
         document.getElementById("last_updated").style.display = "";
         document.getElementById("incorrect_setup_text").style.display = "none";
         document.getElementById("correct_setup_text").style.display = "";
+
+        document.getElementById("input_checkbox").style.display = "";
+        document.getElementById("input_number").style.display = "";
     }
 }
 
 document.getElementById("input_number").onchange = refresh;
 document.getElementById("input_checkbox").onclick = refresh;
 
-fetch('../setup.json')
+fetch('/spiredata/setup.json')
     .then(res => res.json())
     .then(out => ensureSetup(out))
     .catch(err => {
