@@ -167,7 +167,7 @@ function ensureSetup(json) {
 document.getElementById("input_number").onchange = refresh;
 document.getElementById("input_checkbox").onclick = refresh;
 
-fetch('/spiredata/setup.json')
+fetch('setup.json')
     .then(res => res.json())
     .then(out => ensureSetup(out))
     .catch(err => {
