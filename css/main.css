@@ -1,0 +1,82 @@
+body {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 0 10px;
+    font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #a1a199;
+    background: #181a1b;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+a:link {
+    color: #5bf;
+}
+
+a:visited {
+    color: #ccf;
+}
+
+/* Table styling */
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 10px;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 450px;
+    border-radius: 5px 5px 0px 0px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(104, 104, 104, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #364162;
+    color: #dddddd;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 14px 28px 14px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #7a7a7a;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #202324;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #364162;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+input {
+    background-color: #181a1b;
+    color: #dddddd;
+    border-color: black;
+}
+
+/* Slightly tweak padding for smaller screens */
+@media only screen and (max-width: 600px) {
+
+    .styled-table th,
+    .styled-table td {
+        padding: 7px 15px 7px 15px;
+    }
+
+    .styled-table {
+        margin: 5px 5px 5px 5px;
+        min-width: 350px;
+    }
+}
