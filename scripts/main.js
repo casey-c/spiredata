@@ -42,7 +42,12 @@ function loadGist(json) {
     console.log(json);
 
     var runs = json.runs;
-    runs.sort((a, b) => a.timestamp < b.timestamp);
+    //runs.sort((a, b) => a.timestamp < b.timestamp);
+    runs.sort((a, b) => {
+        if (a.timestamp < b.timestamp) return 1
+        else if (a.timestamp == b.timestamp) return 0
+        else return -1
+    });
 
     sortedRuns = runs;
 
