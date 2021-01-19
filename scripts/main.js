@@ -4,7 +4,7 @@ function formatTime(timestamp) {
     var date = new Date(timestamp * 1000);
 
     var month = monthNames[date.getMonth()];
-    var day = date.getDay();
+    var day = date.getDay() + 1;
     var year = date.getFullYear();
 
     return month + " " + day + ", " + year;
@@ -18,7 +18,7 @@ function getExactFormatTime(timestamp) {
     var date = new Date(timestamp * 1000);
 
     var month = date.getMonth() + 1;
-    var day = date.getDay();
+    var day = date.getDay() + 1;
     var year = date.getFullYear();
 
     var hour = date.getHours();
