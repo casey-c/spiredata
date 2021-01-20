@@ -43,7 +43,7 @@
 /* Slightly tweak input width for smaller screens */
 @media only screen and (max-width: 600px) {
     .search {
-        width: 100%;
+        width: 300px;
     }
 
     /* .styled-table th,
