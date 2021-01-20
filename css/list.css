@@ -39,3 +39,20 @@
 .list li .defeat {
     color: rgb(158, 88, 88);
 }
+
+/* Slightly tweak input width for smaller screens */
+@media only screen and (max-width: 600px) {
+    .search {
+        width: 100%;
+    }
+
+    /* .styled-table th,
+    .styled-table td {
+        padding: 7px 15px 7px 15px;
+    }
+
+    .styled-table {
+        margin: 5px 5px 5px 5px;
+        min-width: 350px;
+    } */
+}
