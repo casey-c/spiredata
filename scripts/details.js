@@ -133,6 +133,25 @@ function updateUI() {
 
 /* -------------------------------- */
 
+// Load url parameters to fill out the form
+function loadURLParameters() {
+    var varSection = window.location.search.substr(1);
+    var varArray = varSection.split("&");
+
+
+
+    for (var v = 0; v < varArray.length; v++) {
+        var keyValueArray = varArray[v].split("="); //check the pair
+
+        if (keyValueArray[0] == "search") {
+            document.getElementById("search").value = keyValueArray[1].replace("+", " ");
+            updateFilters();
+        }
+    }
+}
+
+/* -------------------------------- */
+
 function loadGist(json) {
     console.log("Loaded JSON data:");
     console.log(json);
@@ -146,6 +165,8 @@ function loadGist(json) {
 
     fullList = runs;
     filteredList = runs;
+
+    loadURLParameters();
 
     updateUI();
 
