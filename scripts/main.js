@@ -24,7 +24,7 @@ function getExactFormatTime(timestamp) {
     var hour = date.getHours();
     var min = date.getMinutes();
 
-    return pad(month, 2) + "/" + pad(day, 2) + "/" + year + " " + hour + ":" + min;
+    return pad(month, 2) + "/" + pad(day, 2) + "/" + year + " " + hour + ":" + pad(min, 2);
 }
 
 function updateTimestamps(earliest, latest, numRuns) {

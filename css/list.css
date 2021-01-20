@@ -1,0 +1,41 @@
+.search {
+    background-image: url('search.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 590px;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #bbb;
+    margin-bottom: 12px;
+    border-radius: 8px;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.list li a {
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    background-color: #222222;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #dddddd;
+    display: block
+}
+
+.list li a:hover:not(.header) {
+    background-color: rgb(55, 60, 80);
+}
+
+.list li .victory {
+    color: rgb(88, 158, 94);
+}
+
+.list li .defeat {
+    color: rgb(158, 88, 88);
+}
