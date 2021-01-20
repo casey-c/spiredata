@@ -2,9 +2,9 @@
     background-image: url('search.png');
     background-position: 10px 12px;
     background-repeat: no-repeat;
-    width: 590px;
+    width: calc(100% - 40px);
     font-size: 16px;
-    padding: 12px 20px 12px 40px;
+    padding: 12px 0px 12px 40px;
     border: 1px solid #bbb;
     margin-bottom: 12px;
     border-radius: 8px;
@@ -38,21 +38,4 @@
 
 .list li .defeat {
     color: rgb(158, 88, 88);
-}
-
-/* Slightly tweak input width for smaller screens */
-@media only screen and (max-width: 600px) {
-    .search {
-        width: 300px;
-    }
-
-    /* .styled-table th,
-    .styled-table td {
-        padding: 7px 15px 7px 15px;
-    }
-
-    .styled-table {
-        margin: 5px 5px 5px 5px;
-        min-width: 350px;
-    } */
 }
