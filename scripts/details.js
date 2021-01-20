@@ -19,6 +19,12 @@ function isOk(run, filter) {
             return true;
     }
 
+    // Cards
+    for (var i = 0; i < run.deck.length; ++i) {
+        if (run.deck[i].toLowerCase().includes(filter.toLowerCase()))
+            return true;
+    }
+
 
 
     return false;
